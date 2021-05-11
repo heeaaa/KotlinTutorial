@@ -2,17 +2,17 @@ fun main(args: Array<String>) {
     println("Hello World")
     println("This is the main function")
 
-    var name: String = "Hanna"
+    val name = "Hanna"
     println(name)
 
-    var monthlySalary: Int = 10
-    var annualSalary: Int = monthlySalary * 12
+    val monthlySalary = 10
+    val annualSalary: Int = monthlySalary * 12
     println("Monthly salary: $monthlySalary")
     println("Annual salary : $annualSalary")
 
-    println();
+    println()
 
-    val weeks: Int = 234
+    val weeks = 234
     val years: Double = weeks / 52.0
     println("$weeks weeks is $years years ")
 
