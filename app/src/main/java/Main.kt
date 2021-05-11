@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(args: Array<String>) {
 
 //    helloWorld()
@@ -17,6 +19,26 @@ fun main(args: Array<String>) {
 
     val art = Player("Art", 2, 5 , 1000)
     art.show()
+
+    println(art.weapon.name.toUpperCase(Locale.getDefault()))
+    println(art.weapon.damageInflicted)
+
+    val axe = Weapon("Axe", 12)
+    katie.weapon = axe
+    println(katie.weapon.name)
+    println(axe.name)
+
+    axe.damageInflicted = 24
+
+    println(katie.weapon.damageInflicted)
+    println(axe.damageInflicted)
+
+    tim.weapon = Weapon("Sword", 9)
+    println(tim.weapon.name)
+
+    tim.weapon = Weapon("Spear", 14)
+    println(tim.weapon.name)
+
 
 }
 
