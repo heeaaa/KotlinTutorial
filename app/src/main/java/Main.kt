@@ -1,4 +1,26 @@
 fun main(args: Array<String>) {
+
+//    helloWorld()
+//
+//    println()
+//
+//    conditions()
+
+    val tim = Player("Tim")
+    tim.show()
+
+    val luis = Player("Luis", 5)
+    luis.show()
+
+    val katie = Player("Katie", 4,8)
+    katie.show()
+
+    val art = Player("Art", 2, 5 , 1000)
+    art.show()
+
+}
+
+private fun helloWorld() {
     println("Hello World")
     println("This is the main function")
 
@@ -15,15 +37,10 @@ fun main(args: Array<String>) {
     val weeks = 234
     val years: Double = weeks / 52.0
     println("$weeks weeks is $years years ")
-
-    println()
-
-    conditions()
-
 }
 
 
-fun conditions() {
+private fun conditions() {
     val lives = 3
 
     val isGameOver = (lives<1)
